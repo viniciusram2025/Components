@@ -8,7 +8,10 @@
     "@testing-library/user-event": "^13.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.8.0",
+    "react-router-dom": "^6",
     "react-scripts": "5.0.1",
+    "styled-components": "^5.3.6",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -33,6 +36,31 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "babel-plugin-named-exports-order": "^0.0.2",
+    "eslint": "^8.40.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "jest-styled-components": "^7.1.1",
+    "prettier": "2.8.8",
+    "prop-types": "^15.8.1"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!<rootDir>/src/*.{js,jsx,ts,tsx}",
+      "!<rootDir>/src/**/*mock*.{js,jsx,ts,tsx}",
+      "!<rootDir>/src/styles/*.{js,jsx,ts,tsx}",
+      "!<rootDir>/**/stories.{js,jsx,ts,tsx}",
+      "!<rootDir>/src/templates/**/*.{js,jsx,ts,tsx}",
+      "!<rootDir>/node_modules/"
     ]
   }
 }
