@@ -1,9 +1,13 @@
 import * as S from './styles';
 
+import {Container} from '../Container';
+
 export function Navbar() {
     return (
-        <S.Container>
-          <h1>Home</h1>
-        </S.Container>
+        <S.Header>
+          <Container>
+            <h1>Home</h1>
+          </Container>
+        </S.Header>
     )
 }
