@@ -5,6 +5,12 @@ export const theme = {
     white: '#F2F2F2',
     mediumGray: '#c8c8c8',
   },
+  darkColors: {
+    black: '#0A1128',
+    secondaryColor: '#dc143c',
+    white: '#F2F2F2',
+    mediumGray: '#c8c8c8',
+  },
   fontSizes: {
     small: '.8rem',
     bigSmall: '1rem',

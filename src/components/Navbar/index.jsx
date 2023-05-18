@@ -7,29 +7,26 @@ import { Heading } from '../Heading';
 import { Menu } from '../Menu';
 import { menuData } from './menu';
 
-export function Navbar({ bkColor = true }) {
-  return (
+export const Navbar = ({ bkColor = true }) => (
     <S.Header bkColor={bkColor}>
       <Container>
         <S.Logo>
           {bkColor ? (
-              <Heading colorDark={false}>
+              <Heading colorDark={false} size='big'>
                 <GiGemini />Gemini
               </Heading>
             ) : (
-              <Heading colorDark>
+              <Heading colorDark size='big'>
                 <GiGemini />Gemini
               </Heading>
             )
           }
         </S.Logo>
-        <Menu links={menuData}/>
+        <Menu links={menuData} bkColor={bkColor} />
       </Container>
     </S.Header>
-  )
-};
+  );
 
 Navbar.propTypes = {
   bkColor: P.bool,
-  ...Menu.propTypes,
 };

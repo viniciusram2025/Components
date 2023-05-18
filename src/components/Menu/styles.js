@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const NavMenu = styled.nav`
     display: flex;
     align-items: center;
+    margin-right: 2rem;
 `;
 
 export const MenuList = styled.ul`
@@ -13,6 +14,3 @@ export const MenuList = styled.ul`
 export const MenuItem = styled.li`
     list-style: none;
 `;
-
-
-
