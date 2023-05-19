@@ -1,4 +1,3 @@
-import P from 'prop-types';
 import { GiGemini } from 'react-icons/gi';
 import * as S from './styles';
 
@@ -7,26 +6,15 @@ import { Heading } from '../Heading';
 import { Menu } from '../Menu';
 import { menuData } from './menu';
 
-export const Navbar = ({ bkColor = true }) => (
-    <S.Header bkColor={bkColor}>
+export const Navbar = () => (
+    <S.Header >
       <Container>
         <S.Logo>
-          {bkColor ? (
-              <Heading colorDark={false} size='big'>
-                <GiGemini />Gemini
-              </Heading>
-            ) : (
-              <Heading colorDark size='big'>
-                <GiGemini />Gemini
-              </Heading>
-            )
-          }
+          <Heading size='big'>
+            <GiGemini />Gemini
+          </Heading>
         </S.Logo>
-        <Menu links={menuData} bkColor={bkColor} />
+        <Menu links={menuData} />
       </Container>
     </S.Header>
   );
-
-Navbar.propTypes = {
-  bkColor: P.bool,
-};

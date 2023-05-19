@@ -3,12 +3,11 @@ import styled, {css} from 'styled-components';
 
 export const LinkMenu = styled.a`
   ${({theme}) => css`
-      color: ${theme.colors.white};
-      font-size: ${theme.fontSizes.medium};
+      font-size: ${theme.fontSizes.large};
       text-decoration: none;
       font-family: ${theme.fontFamily.title};
       display: inline-block;
-      padding: ${theme.spacings.medium} 0;
+      padding: ${theme.spacings.space04} 0;
       cursor: pointer;
       position: relative;
 
@@ -21,7 +20,7 @@ export const LinkMenu = styled.a`
         left: 0;
         width: 100%;
         height: 2px;
-        background: ${theme.colors.white};
+        background: ${theme.colors.text};
         transform-origin: right;
         transform: scaleX(0);
         transition: transform .5s;
