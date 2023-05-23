@@ -1,26 +1,20 @@
 /* eslint-disable no-unused-expressions */
-import P from 'prop-types';
-import { useState } from 'react';
-import { FaMoon, FaSun } from 'react-icons/fa';
+import { BsMoon, BsSun } from 'react-icons/bs';
 import * as S from './styles';
 
-export const ToggleButton = ({ typeButton, onClickButton }) => {
 
-const [toggle, setToggle] = useState(false)
-
-  return(
-    <S.Container>
-      <S.ToggleButton
-          type={typeButton}
-          onClick={onClickButton}
+export const ToggleButton = () => (
+    <>
+      <S.Toggle
+          id="toggleMode"
+          type='checkbox'
       />
-      {toggle === false ? setToggle(() => <FaSun />) : setToggle(() => <FaMoon />)}
+      <S.ToggleLabel
+        for="toggleMode"
+      >
+        <BsSun />
+        <BsMoon />
+      </S.ToggleLabel>
+    </>
+  )
 
-    </S.Container>
-  );
-}
-
-ToggleButton.propTypes = {
-  typeButton: P.string.isRequired,
-  onClickButton: P.func.isRequired,
-};

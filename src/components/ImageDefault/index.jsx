@@ -16,7 +16,6 @@ ImageDefault.propTypes = {
   srcImg: P.node.isRequired,
   altText: P.string.isRequired,
   heightImg: P.node.isRequired,
-
   /* opcional/optional */
   widthImg: P.node,
 };
