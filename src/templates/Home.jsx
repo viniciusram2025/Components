@@ -26,8 +26,10 @@ function Home() {
 
   return (
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
-      <ToggleButton onClick={toggleTheme} />
-      <Navbar />
+      <ToggleButton
+        ToogleTheme={toggleTheme}
+      />
+        <Navbar />
       <GlobalStyles />
     </ThemeProvider>
   );

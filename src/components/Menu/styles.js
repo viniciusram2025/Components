@@ -8,7 +8,7 @@ export const NavMenu = styled.nav`
 
 export const MenuList = styled.ul`
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
 `;
 
 export const MenuItem = styled.li`

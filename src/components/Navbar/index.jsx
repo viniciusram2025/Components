@@ -10,7 +10,7 @@ export const Navbar = () => (
     <S.Header >
       <Container>
         <S.Logo>
-          <Heading size='big'>
+          <Heading size='huge'>
             <GiGemini />Gemini
           </Heading>
         </S.Logo>

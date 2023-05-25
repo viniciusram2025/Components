@@ -10,8 +10,8 @@ export const Toggle = styled.input`
 export const ToggleLabel = styled.label`
   width: 130px;
   height: 40px;
-  position: relative;
   display: flex;
+  position: relative;
   background: #ebebeb;
   border-radius: 35px;
   cursor: pointer;

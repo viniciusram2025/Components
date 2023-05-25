@@ -3,7 +3,7 @@ import styled, {css} from 'styled-components';
 
 export const LinkMenu = styled.a`
   ${({theme}) => css`
-      font-size: ${theme.fontSizes.large};
+      font-size: ${theme.fontSizes.medium};
       text-decoration: none;
       font-family: ${theme.fontFamily.title};
       display: inline-block;
