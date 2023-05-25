@@ -16,5 +16,7 @@
   "useTabs": false,
   "vueIndentScriptAndStyle": false,
   "embeddedLanguageFormatting": "off",
-  "jsxBracketSameLine": false
+  "jsxBracketSameLine": false,
+  "insertSpaces":true,
+  "tabSize":2
 }
