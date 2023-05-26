@@ -1,27 +1,27 @@
 export const menuData = [
   {
     children: 'Home',
-    link: '#home',
+    link: '/home',
     newTab: false,
   },
   {
     children: 'About',
-    link: '#about',
+    link: '/about',
     newTab: false,
   },
   {
     children: 'Services',
-    link: '#services',
+    link: '/services',
     newTab: false,
   },
   {
     children: 'Contact',
-    link: '#contact',
+    link: '/contact',
     newTab: false,
   },
   {
     children: 'Help',
-    link: '#help',
+    link: '/help',
     newTab: false,
   }
 ]

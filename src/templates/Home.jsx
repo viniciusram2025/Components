@@ -1,38 +1,20 @@
-/* eslint-disable no-unused-expressions */
-import { useEffect, useState } from 'react';
 import { ThemeProvider } from 'styled-components';
 import { Navbar } from '../components/Navbar';
 import { ToggleButton } from '../components/ToggleButton';
+import { useDarkMode } from '../hooks/useDarkMode/useDarkMode';
 import { GlobalStyles } from '../styles/global-styles';
 import { darkTheme, lightTheme } from '../styles/theme';
 
-function Home() {
-  const [theme, setTheme] = useState("light")
-
-  const toggleTheme = () => {
-    if (theme === "light") {
-      localStorage.setItem("theme", "dark");
-      setTheme("dark");
-    } else {
-      localStorage.setItem("theme", "light");
-      setTheme("light");
-    }
-  };
-
-  useEffect(() => {
-    const localTheme = localStorage.getItem("theme");
-    localTheme && setTheme(localTheme);
-  }, []);
+const Home = () => {
+  const [theme, themeToggler] = useDarkMode();
+  const themeMode = theme === 'light' ? lightTheme : darkTheme;
 
   return (
-    <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
-      <ToggleButton
-        ToogleTheme={toggleTheme}
-      />
-        <Navbar />
+    <ThemeProvider theme={themeMode}>
+      <ToggleButton theme={theme} toggleTheme={themeToggler} />
+      <Navbar />
       <GlobalStyles />
     </ThemeProvider>
   );
-}
-
+};
 export default Home;

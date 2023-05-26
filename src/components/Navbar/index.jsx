@@ -7,14 +7,15 @@ import { Menu } from '../Menu';
 import { menuData } from './menu';
 
 export const Navbar = () => (
-    <S.Header >
-      <Container>
-        <S.Logo>
-          <Heading size='huge'>
-            <GiGemini />Gemini
-          </Heading>
-        </S.Logo>
-        <Menu links={menuData} />
-      </Container>
-    </S.Header>
-  );
+  <S.Header>
+    <Container>
+      <S.Logo>
+        <Heading size="huge">
+          <GiGemini />
+          Gemini
+        </Heading>
+      </S.Logo>
+      <Menu links={menuData} />
+    </Container>
+  </S.Header>
+);

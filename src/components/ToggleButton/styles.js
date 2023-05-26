@@ -1,6 +1,13 @@
 /* eslint-disable no-use-before-define */
 import styled from 'styled-components';
 
+export const Container = styled.div`
+  position: fixed;
+  top: 0;
+  left: 30px;
+  z-index: 10;
+`;
+
 export const Toggle = styled.input`
   width: 0;
   height: 0;
@@ -15,7 +22,7 @@ export const ToggleLabel = styled.label`
   background: #ebebeb;
   border-radius: 35px;
   cursor: pointer;
-  margin-left: 30px;
+
   box-shadow: inset 0px 2px 5px rgba(0,0,0,.4), inset 0px -5px 15px rgba(255,255,255,.4);
   transition: .5s;
 
@@ -72,4 +79,3 @@ export const ToggleLabel = styled.label`
   }
 
 `;
-
