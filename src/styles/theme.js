@@ -1,6 +1,7 @@
 export const lightTheme = {
   colors: {
-    text: '#0A1128',
+    // text: '#0A1128',
+    text: '#3a3a3a',
     background: '#F2F2F2',
   },
   fontSizes: {
@@ -47,13 +48,13 @@ export const lightTheme = {
     large: '992px',
     xlarge: '1200px',
     xxlarge: '1400px',
-  }
-}
+  },
+};
 
 export const darkTheme = {
   colors: {
     text: '#F2F2F2',
-    background: '#0A1128',
+    background: '#3a3a3a',
   },
   fontSizes: {
     xSmall: '1.2rem',
@@ -99,5 +100,5 @@ export const darkTheme = {
     large: '992px',
     xlarge: '1200px',
     xxlarge: '1400px',
-  }
-}
+  },
+};
