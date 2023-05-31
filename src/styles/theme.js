@@ -3,6 +3,7 @@ export const lightTheme = {
     // text: '#0A1128',
     text: '#3a3a3a',
     background: '#F2F2F2',
+    buttonColor: '#F2F2F2',
   },
   fontSizes: {
     xSmall: '1.2rem',
@@ -55,6 +56,7 @@ export const darkTheme = {
   colors: {
     text: '#F2F2F2',
     background: '#3a3a3a',
+    buttonColor: '#F2F2F2',
   },
   fontSizes: {
     xSmall: '1.2rem',

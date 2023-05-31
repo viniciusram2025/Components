@@ -1,4 +1,4 @@
-import styled, {css} from 'styled-components';
+import styled, { css } from 'styled-components';
 import { Container } from '../Container/styles';
 import { Title } from '../Heading/styles';
 
@@ -11,6 +11,7 @@ export const Header = styled.header`
     background: ${theme.colors.background};
     position: fixed;
     z-index: 1;
+    box-shadow: 0 0 8px rgba(0,0,0,.4);
 
     ${Container} {
       display: flex;
@@ -25,7 +26,7 @@ export const Logo = styled.div`
       display: flex;
       align-items: center;
 
-      ${ Title } {
+      ${Title} {
         display: flex;
         align-items: center;
 
