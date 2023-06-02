@@ -7,7 +7,6 @@ export const SectionContainer = styled.section`
 `;
 export const Container = styled.div`
   width: 80%;
-  //height: 100vh;
   margin: 0 auto;
   display: flex;
   padding: 4rem 0;

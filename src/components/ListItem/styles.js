@@ -1,11 +1,14 @@
 import styled from 'styled-components';
 
-export const ListItems = styled.div`
-  display: flex;
-  width: 33%;
-  border: 1px solid red;
-  height: 500px;
-`;
 export const Li = styled.li`
+  display: block;
+  width: 100%;
+  padding: ${({ theme }) => theme.spacings.space01};
+  font-size: ${({ theme }) => theme.fontSizes.small};
 
+  svg {
+    height: 15px;
+    width: 15px;
+    margin-right: 1rem;
+  }
 `;

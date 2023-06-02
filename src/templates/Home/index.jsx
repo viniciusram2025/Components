@@ -1,12 +1,19 @@
 import { ThemeProvider } from 'styled-components';
+import { Container } from '../../components/Container';
 import { Navbar } from '../../components/Navbar';
-// import { SectionTwoColumns } from '../../components/SectionTwoColumns';
+import { SectionLists } from '../../components/SectionLists';
+import { SectionTwoColumns } from '../../components/SectionTwoColumns';
 import { ToggleButton } from '../../components/ToggleButton';
-// import { SectionItens } from '../../data/SectionTwoColumnsItens/Itens';
-import { SectionThreeColumns } from '../../components/SectionThreeColumns';
+import {
+  ListItens1,
+  ListItens2,
+  ListItens3,
+} from '../../data/ListFuncItens/ListFuncItens';
+import { SectionItens } from '../../data/SectionTwoColumnsItens/Itens';
 import { useDarkMode } from '../../hooks/useDarkMode/useDarkMode';
 import { GlobalStyles } from '../../styles/global-styles';
 import { darkTheme, lightTheme } from '../../styles/theme';
+import * as S from './styles';
 
 const Home = () => {
   const [theme, themeToggler] = useDarkMode();
@@ -17,10 +24,15 @@ const Home = () => {
       <ToggleButton theme={theme} toggleTheme={themeToggler} />
       <Navbar />
 
-      {/* <SectionTwoColumns menuItens={SectionItens} /> */}
+      <SectionTwoColumns menuItens={SectionItens} />
 
-      <SectionThreeColumns />
-
+      <S.Container>
+        <Container>
+          <SectionLists list={ListItens1} />
+          <SectionLists list={ListItens2} />
+          <SectionLists list={ListItens3} />
+        </Container>
+      </S.Container>
       <GlobalStyles />
     </ThemeProvider>
   );
