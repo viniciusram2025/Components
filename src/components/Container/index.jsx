@@ -8,4 +8,3 @@ export function Container({ children }) {
 Container.propTypes = {
   children: P.node.isRequired,
 };
-

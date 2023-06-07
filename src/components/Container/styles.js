@@ -1,24 +1,14 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
 export const Container = styled.div`
-  ${({ theme }) => css`
-    max-width: 120rem;
-    width: 100%;
+    max-width: 1920px;
     margin: 0 auto;
-    padding: 0 ${theme.spacings.space07};
 
-    @media (max-width: 85rem) {
-        max-width: 85rem;
-        width: 64rem;
-        padding: 0 ${theme.spacings.space05};
-    }
-    @media (max-width: 64rem) {
-        max-width: 64rem;
-        width: 48rem;
-    }
-    @media (max-width: 48rem) {
-        max-width: 48rem;
-        width: 100%;
-    }
-  `}
+    @media (max-width: 1560px) {max-width: 1500px;}
+    @media (max-width: 1360px) {max-width: 1320px;}
+    @media (max-width: 1200px) {max-width: 1140px;}
+    @media (max-width: 992px) {max-width: 960px;}
+    @media (max-width: 768px) {max-width: 720px;}
+    @media (max-width: 576px) {max-width: 540px;}
+
 `;

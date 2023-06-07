@@ -1,21 +1,20 @@
 import styled from 'styled-components';
 import { Title } from '../Heading/styles';
+import { Container } from '../Container/styles';
 
 export const SectionContainer = styled.section`
   width: 100%;
   background: ${({ theme }) => theme.colors.background};
 `;
-export const Container = styled.div`
-  width: 80%;
-  margin: 0 auto;
+export const Content = styled.div`
   display: flex;
   padding: 4rem 0;
+  margin: 0 auto;
 
-
-  // inverter divs
-  /*:nth-last-of-type(even) {
-   flex-direction: row-reverse;
-  }*/
+  ${Container} {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 export const ContentDiv = styled.div`

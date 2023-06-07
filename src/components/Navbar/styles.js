@@ -1,19 +1,19 @@
 import styled, { css } from 'styled-components';
-import { Container } from '../Container/styles';
+import { Container as NavContainer } from '../Container/styles';
 import { Title } from '../Heading/styles';
 
 export const Header = styled.header`
   ${({ theme }) => css`
     width: 100%;
     height: ${theme.spacings.space11};
-    display: flex;
     align-items: center;
+    display: flex;
     background: ${theme.colors.background};
     position: fixed;
     z-index: 1;
     box-shadow: 0 0 8px rgba(0,0,0,.4);
 
-    ${Container} {
+    ${NavContainer} {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -24,7 +24,6 @@ export const Header = styled.header`
 export const Logo = styled.div`
   ${({ theme }) => css`
       display: flex;
-      align-items: center;
 
       ${Title} {
         display: flex;
