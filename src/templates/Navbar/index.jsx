@@ -8,11 +8,11 @@ import * as S from './styles';
 import { menuData } from '../../data/MenuItens/menu';
 
 // components
-import { Container } from '../Container';
-import { Heading } from '../Heading';
-import { Menu } from '../Menu';
+import { Container } from '../../components/Container';
+import { Heading } from '../../components/Heading';
+import { Menu } from '../../components/Menu';
 
-export const Navbar = () => (
+const Navbar = () => (
   <S.Header>
     <Container>
       <S.Logo>
@@ -25,3 +25,5 @@ export const Navbar = () => (
     </Container>
   </S.Header>
 );
+
+export default Navbar ;

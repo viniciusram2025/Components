@@ -1,13 +1,13 @@
 /* eslint-disable react/no-array-index-key */
 import P from 'prop-types';
-import { ButtonDefault } from '../ButtonDefault';
-import { Container } from '../Container';
-import { Heading } from '../Heading';
-import { ImageDefault } from '../ImageDefault';
-import { TextContent } from '../TextContent/Index';
+import { ButtonDefault } from '../../components/ButtonDefault';
+import { Container } from '../../components/Container';
+import { Heading } from '../../components/Heading';
+import { ImageDefault } from '../../components/ImageDefault';
+import { TextContent } from '../../components/TextContent';
 import * as S from './styles';
 
-export const SectionTwoColumns = ({ menuItens = [] }) => (
+const SectionTwoColumns = ({ menuItens = [] }) => (
   <S.SectionContainer>
     <Container>
       {menuItens.map((item, index) => (
@@ -31,6 +31,8 @@ export const SectionTwoColumns = ({ menuItens = [] }) => (
     </Container>
   </S.SectionContainer>
 );
+
+export default SectionTwoColumns;
 
 SectionTwoColumns.propTypes = {
   menuItens: P.arrayOf(

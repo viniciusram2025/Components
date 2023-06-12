@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import { Title } from '../Heading/styles';
-import { Container } from '../Container/styles';
+import { Title } from '../../components/Heading/styles';
+import { Container } from '../../components/Container/styles';
 
 export const SectionContainer = styled.section`
   width: 100%;
@@ -32,4 +32,9 @@ export const ContentImage = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 50%;
+
+  img {
+    width: 100%;
+  }
 `;

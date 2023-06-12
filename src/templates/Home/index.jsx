@@ -1,19 +1,29 @@
 import { ThemeProvider } from 'styled-components';
+
+// Components
 import { Container } from '../../components/Container';
-import { Navbar } from '../../components/Navbar';
-import { SectionLists } from '../../components/SectionLists';
-import { SectionTwoColumns } from '../../components/SectionTwoColumns';
 import { ToggleButton } from '../../components/ToggleButton';
+
+// data
 import {
   ListItens1,
   ListItens2,
   ListItens3,
 } from '../../data/ListFuncItens/ListFuncItens';
 import { SectionItens } from '../../data/SectionTwoColumnsItens/Itens';
+
+// hooks
 import { useDarkMode } from '../../hooks/useDarkMode/useDarkMode';
+
+// styles
 import { GlobalStyles } from '../../styles/global-styles';
 import { darkTheme, lightTheme } from '../../styles/theme';
 import * as S from './styles';
+
+// templates
+import  Navbar  from '../Navbar';
+import  SectionLists  from '../SectionLists';
+import  SectionTwoColumns  from '../SectionTwoColumns';
 
 const Home = () => {
   const [theme, themeToggler] = useDarkMode();

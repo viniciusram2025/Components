@@ -1,10 +1,10 @@
 /* eslint-disable react/no-array-index-key */
 import P from 'prop-types';
 import { MdDone } from 'react-icons/md';
-import { ListItem } from '../ListItem';
+import { ListItem } from '../../components/ListItem';
 import * as S from './styles';
 
-export const SectionLists = ({ list = [] }) => (
+const SectionLists = ({ list = [] }) => (
   <S.Container>
     <S.BoxItems>
       <S.MenuList>
@@ -18,6 +18,8 @@ export const SectionLists = ({ list = [] }) => (
     </S.BoxItems>
   </S.Container>
 );
+
+export default SectionLists;
 
 SectionLists.propTypes = {
   list: P.arrayOf(

@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
-import { Container as NavContainer } from '../Container/styles';
-import { Title } from '../Heading/styles';
+import { Container as NavContainer } from '../../components/Container/styles';
+import { Title } from '../../components/Heading/styles';
 
 export const Header = styled.header`
   ${({ theme }) => css`
